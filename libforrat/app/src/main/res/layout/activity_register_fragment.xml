@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment"
+    android:background="@drawable/fonn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="РЕГИСТРАЦИЯ"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+        <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="380dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/textt"
+            android:textColor="@color/black"
+            android:hint="Фамилия" />
+
+        <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="380dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textt"
+            android:textColor="@color/black"
+            android:hint="Имя" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="380dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textt"
+            android:textColor="@color/black"
+            android:hint="Почта" />
+
+        <EditText
+            android:id="@+id/loginEditText"
+            android:layout_width="380dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/textt"
+            android:textColor="@color/black"
+            android:hint="Логин" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="380dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/textt"
+            android:textColor="@color/black"
+            android:hint="Пароль"
+            android:inputType="textPassword" />
+
+        <Spinner
+            android:id="@+id/roleSpinner"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/textt"
+
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/but"
+            android:textColor="@color/white"
+            android:text="Зарегистрироваться"
+            />
+        <Button
+            android:id="@+id/nazadButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:onClick="nazadLogin"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/but"
+            android:text="Назад"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</FrameLayout>

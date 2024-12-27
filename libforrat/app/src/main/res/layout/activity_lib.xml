@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lib"
+    android:background="@drawable/fonn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/kk"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Добавление книги"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="302dp"
+            android:layout_height="52dp"
+            android:background="@drawable/textt"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:hint="Название книги" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:background="@drawable/but"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:text="Найти" />
+
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/authorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/sectionEditText"
+            android:layout_width="302dp"
+            android:layout_height="52dp"
+            android:background="@drawable/textt"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:hint="Раздел" />
+
+        <EditText
+            android:id="@+id/daysEditText"
+            android:layout_width="302dp"
+            android:layout_height="52dp"
+            android:background="@drawable/textt"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:hint="Число дней" />
+
+        <CheckBox
+            android:id="@+id/electronicCheckBox"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/textt"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:text="Электронная" />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:background="@drawable/but"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Сохранить"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/nazadButton"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="250dp"
+            android:onClick="nazadLogin"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/but"
+            android:text="Назад"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
